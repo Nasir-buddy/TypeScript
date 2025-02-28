@@ -100,3 +100,11 @@ let und: undefined;
 // Never is a data type that we can use when we are sure that the function will never return any value
 // Never is a static type
 // Never type can store only undefined value
+
+function run(): never{
+    while(true){
+        console.log("Hello World");
+    }
+}
+run();
+console.log("hey");
