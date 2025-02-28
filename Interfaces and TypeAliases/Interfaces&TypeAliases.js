@@ -5,11 +5,10 @@
 // extending interface
 // type aliases
 // Intersection types
-;
-function getUserData(obj) {
-    obj.age;
-    obj.email;
-    obj.name;
-    obj.phone;
+function getUserData(objt) {
+    objt.age;
+    objt.email;
+    objt.name;
+    objt.phone;
 }
-getUserData({ name: "Nasir", age: 25, email: 'Nasir@gmail.com', phone: 345345523 });
+getUserData({ name: "Nasir", age: 25, email: 'nasir@gmail.com', phone: 345345523 });
