@@ -1,5 +1,5 @@
 "use strict";
-// Ignore all comments because it is not valid in JS it is only for TS
+// Basic Types
 // Premitive Types - number, string, boolean
 // Array 
 // Tuples
@@ -40,7 +40,21 @@ var Statuscode;
 // Any is a data type that we can use when we are not sure about the type of the value
 // Any is a dynamic type   
 // Any type can store any type of value 
+// Any cant check any thing for the variable 
 let a; // By default it is any type
 // that variable can be assigned any type of value
 a = 10;
 a = "Nasir";
+a.substring(1, 2);
+// Unknown
+// Unknown is a data type that we can use when we can define the type of the value later
+// Unknown is a static type
+// Unknown type can store any type of value
+// we cant do operation on unknown without checking the type of the value
+let b;
+b = 10;
+b = "Ali";
+// b.substring(1, 2); // Error
+if (b instanceof String) {
+    b.substring(1, 2);
+}
