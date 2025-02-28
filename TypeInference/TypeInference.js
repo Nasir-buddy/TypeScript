@@ -12,3 +12,6 @@ let annoation2 = 12;
 let annoation3 = true;
 annoation3 = "Ali";
 annoation3 = 12;
+function example(num, str) {
+    console.log(num, str);
+}

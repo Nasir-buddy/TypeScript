@@ -13,3 +13,8 @@ let annoation2: string | number = 12;
 let annoation3: string | number | boolean = true;
 annoation3 = "Ali";
 annoation3 = 12;
+
+
+function example(num: number, str: string): void{
+    console.log(num, str);
+} 
