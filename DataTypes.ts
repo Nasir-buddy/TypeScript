@@ -80,3 +80,10 @@ function xyz(): string{
 function bool(): boolean{
     return true;
 }
+
+// Null
+// Null is a data type that we can use when we want to assign null value to a variable
+// Null is a static type
+// Null type can store only null value
+
+let nul: null; 
