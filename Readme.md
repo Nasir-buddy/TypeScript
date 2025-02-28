@@ -38,6 +38,7 @@ npm install
 ```bash
 tsc filename.ts    # Compile TypeScript
 node filename.js   # Run compiled JavaScript
+tsc --watch # For real time updates
 ```
 
 ## Resources
