@@ -36,3 +36,17 @@ function getEmployeeData(obj: Employee){
     obj.position;
     obj.salary;
 }
+
+// if we create two interface with same name then it will become merge in one interface 
+
+interface merge {
+    name: string;
+}
+interface merge {
+    age: number;
+}
+
+function mergeFunction(obj: merge){
+    obj.age,
+    obj.name
+}

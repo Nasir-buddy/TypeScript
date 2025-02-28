@@ -17,3 +17,7 @@ function getEmployeeData(obj) {
     obj.position;
     obj.salary;
 }
+function mergeFunction(obj) {
+    obj.age,
+        obj.name;
+}
