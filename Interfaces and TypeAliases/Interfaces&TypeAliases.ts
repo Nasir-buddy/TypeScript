@@ -23,3 +23,16 @@ function getUserData(objt: User) {
 }
 
 getUserData({ name: "Nasir", age: 25, email: 'nasir@gmail.com', phone: 345345523 });
+
+
+// Extending Interface
+// we extending the properties of the interface from another interface and also we can add some more properties
+interface Employee extends User {
+    salary: number;
+    position: string;
+}
+
+function getEmployeeData(obj: Employee){
+    obj.position;
+    obj.salary;
+}

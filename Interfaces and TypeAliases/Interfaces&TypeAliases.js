@@ -13,3 +13,7 @@ function getUserData(objt) {
     objt.gender;
 }
 getUserData({ name: "Nasir", age: 25, email: 'nasir@gmail.com', phone: 345345523 });
+function getEmployeeData(obj) {
+    obj.position;
+    obj.salary;
+}
