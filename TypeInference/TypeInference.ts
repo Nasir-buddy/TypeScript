@@ -10,6 +10,6 @@ let typeinference = 12;
 let annoation: string = "Nasir";
 let annoation1: number | boolean = true;
 let annoation2: string | number = 12;
-let annoation3: string | number | boolean = true,;
+let annoation3: string | number | boolean = true;
 annoation3 = "Ali";
 annoation3 = 12;
