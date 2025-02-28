@@ -58,3 +58,16 @@ b = "Ali";
 if (b instanceof String) {
     b.substring(1, 2);
 }
+// Void
+// Void is a data type that we can use when we dont want to return any value from the function
+// Void is a static type
+// Void type can store only undefined value
+function abcd() {
+    console.log("Hello World");
+}
+function xyz() {
+    return "Nasir Ali";
+}
+function bool() {
+    return true;
+}
