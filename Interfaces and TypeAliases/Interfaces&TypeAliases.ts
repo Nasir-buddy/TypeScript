@@ -11,13 +11,15 @@ interface User {
     age: number;
     email: string;
     phone: number;
+    gender?: string; // optional property
 }
 
-function getUserData(objt: User){
+function getUserData(objt: User) {
     objt.age;
     objt.email;
     objt.name;
     objt.phone;
+    objt.gender;
 }
 
-getUserData({name: "Nasir", age: 25, email: 'nasir@gmail.com', phone: 345345523});
+getUserData({ name: "Nasir", age: 25, email: 'nasir@gmail.com', phone: 345345523 });
