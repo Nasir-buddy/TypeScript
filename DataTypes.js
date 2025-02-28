@@ -55,7 +55,7 @@ let b;
 b = 10;
 b = "Ali";
 // b.substring(1, 2); // Error
-if (b instanceof String) {
+if (typeof b === "string") {
     b.substring(1, 2);
 }
 // Void
