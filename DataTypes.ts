@@ -87,3 +87,16 @@ function bool(): boolean{
 // Null type can store only null value
 
 let nul: null; 
+
+
+// Undefined
+// Undefined is a data type that we can use when we want to assign undefined value to a variable
+// Undefined is a static type
+// Undefined type can store only undefined value
+
+let und: undefined;
+
+// Never
+// Never is a data type that we can use when we are sure that the function will never return any value
+// Never is a static type
+// Never type can store only undefined value
