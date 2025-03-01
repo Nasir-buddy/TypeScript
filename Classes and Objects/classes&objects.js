@@ -14,6 +14,7 @@ console.log(device.name);
 // like a machine making biscuits, the machine is the constructer and the biscuits are the objects
 // the machine will make biscuits but it will not be the biscuit itself
 // the machine will have the structure of the biscuit but not the biscuit itself
+// ts gives you the ability to make a constructer in a class directly in a constructor
 class HumanMaker {
     // take those values that are required to make a human not that we know about the human like age is always start from 0 
     constructor(name, height, weight, isHandsome) {
@@ -25,3 +26,12 @@ class HumanMaker {
     }
 }
 let h1 = new HumanMaker("Nasir", 5.6, 60, true);
+// traditional way of making a class and constructor but more complex
+class BottleMaker {
+    constructor(brand, price, category) {
+        this.brand = brand;
+        this.price = price;
+        this.category = category;
+    }
+}
+let bt = new BottleMaker("CocaCola", 20, "SoftDrink");
