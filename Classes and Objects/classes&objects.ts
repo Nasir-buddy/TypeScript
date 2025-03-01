@@ -13,10 +13,12 @@ console.log(device.name);
 // the machine will make biscuits but it will not be the biscuit itself
 // the machine will have the structure of the biscuit but not the biscuit itself
 
-class BottleMaker{
-    constructor(public name: string, public price: number){
-        
+
+class HumanMaker{
+    age = 0;
+    // take those values that are required to make a human not that we know about the human like age is always start from 0 
+    constructor(public name: string, public height: number,public weight: number,public isHandsome: boolean){
+
     }
 }
-
-let bottle = new BottleMaker("Milton", 1200); // this is the object of the class BottleMaker
+let h1 = new HumanMaker("Nasir", 5.6, 60, true);

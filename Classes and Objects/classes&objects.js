@@ -14,10 +14,14 @@ console.log(device.name);
 // like a machine making biscuits, the machine is the constructer and the biscuits are the objects
 // the machine will make biscuits but it will not be the biscuit itself
 // the machine will have the structure of the biscuit but not the biscuit itself
-class BottleMaker {
-    constructor(name, price) {
+class HumanMaker {
+    // take those values that are required to make a human not that we know about the human like age is always start from 0 
+    constructor(name, height, weight, isHandsome) {
         this.name = name;
-        this.price = price;
+        this.height = height;
+        this.weight = weight;
+        this.isHandsome = isHandsome;
+        this.age = 0;
     }
 }
-let bottle = new BottleMaker("Milton", 1200); // this is the object of the class BottleMaker
+let h1 = new HumanMaker("Nasir", 5.6, 60, true);
