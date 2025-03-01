@@ -37,3 +37,28 @@ class BottleMaker{
 }
 
 let bt = new BottleMaker("CocaCola", 20, "SoftDrink");
+
+
+// This keyword
+// this keyword is used to refer to the current object of the class
+
+class anything{
+    name = "Nasir"
+    // this ka matlab hai class ke andar kisi chij ko call krna hai to use this ke sth referance dena prega
+    // we cannot make new variable in methods we can take it from outside of the methods with this keyword
+    changeName(){
+        this.name = "Ali"
+        this.changemorestuff();
+    }
+    changemorestuff(){
+
+    }
+}
+
+class maker{
+    constructor(public name: string){
+        this.name = name;
+    }
+}
+
+let m = new maker("Hellow Maker")
