@@ -5,9 +5,19 @@ class BottleMaker1{
     // readonly means we can only read it but cannot change it
     // static means we can call it without making an object of the class
 
+    private halwa: string = "haluwa";
+
     constructor(public name: string){
 
     }
 }
-let bt1 = new BottleMaker1("Milton");
-bt1.name = "CocaCola";
+class MetalBottleMaker extends BottleMaker1{
+    constructor(name: string){
+        super(name);
+    }
+    getValue(){
+        console.log(this.name, this.halwa);
+    }   
+}
+let bt1 = new MetalBottleMaker("Milton");
+bt1.getValue();
