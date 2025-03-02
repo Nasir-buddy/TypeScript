@@ -21,3 +21,20 @@ class MetalBottleMaker extends BottleMaker1{
 }
 let bt1 = new MetalBottleMaker("Milton");
 bt1.getValue();
+
+
+// protected means we can change it from the class and its child class but not from outside the class
+
+class carMaker{
+    private name = "Toyota";
+}
+
+class superCarMaker extends carMaker{
+    public name = "Ferrari";
+    changename(){
+        this.name = "Lamborghini";
+    }
+}
+
+let car = new superCarMaker();
+car.changename();
