@@ -37,3 +37,19 @@ class superCarMaker extends carMaker {
 }
 let car = new superCarMaker();
 car.changename();
+class keyboardMaker {
+    constructor() {
+        // we can set it to private too
+        this.brandName = "CosmicByte";
+    }
+}
+class keyboard extends keyboardMaker {
+    constructor() {
+        super(...arguments);
+        this.brandName = "HP";
+    }
+    changeKeyboardName() {
+        this.brandName = "Nothing";
+    }
+}
+let keybrd = new keyboardMaker();

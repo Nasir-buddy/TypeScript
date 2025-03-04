@@ -40,7 +40,8 @@ let car = new superCarMaker();
 car.changename();
 
 class keyboardMaker{
-    private brandName: "CosmicByte";
+    // we can set it to private too
+    public brandName = "CosmicByte";
 }
 
 class keyboard extends keyboardMaker{
