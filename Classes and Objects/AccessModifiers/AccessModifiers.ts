@@ -63,3 +63,11 @@ class User{
 }
 
 let n1 = new User("Ali Nasir")
+
+
+class newUser{
+    // these are parameter properties that are initialize in parameter properties.
+    constructor(public name: string, public age: number, public gender?: string){
+
+    }
+}

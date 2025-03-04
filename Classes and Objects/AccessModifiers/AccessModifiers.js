@@ -63,3 +63,11 @@ class User {
     }
 }
 let n1 = new User("Ali Nasir");
+class newUser {
+    // these are parameter properties that are initialize in parameter properties.
+    constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+}
