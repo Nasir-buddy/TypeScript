@@ -20,7 +20,7 @@ class MetalBottleMaker extends BottleMaker1 {
 }
 let bt1 = new MetalBottleMaker("Milton");
 bt1.getValue();
-// protected means we can change it from the class and extended class can also change it value too 
+// protected means we can change it from the class and extended class can also change it value in that class too
 class carMaker {
     constructor() {
         this.name = "Toyota";
@@ -53,3 +53,13 @@ class keyboard extends keyboardMaker {
     }
 }
 let keybrd = new keyboardMaker();
+// readonly property 
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+    changeName() {
+        this.name = "Nasir Ali";
+    }
+}
+let n1 = new User("Ali Nasir");
