@@ -16,3 +16,8 @@ var register = function (name, age, callback) {
 register("Nasir Ali", 24, function (argument) {
     console.log(argument);
 });
+// show details
+var userDetails = function (name, gender) {
+};
+userDetails("nasir", "male");
+userDetails("someone");

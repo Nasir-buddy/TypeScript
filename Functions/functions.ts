@@ -13,10 +13,17 @@ login("harsh", (value: string) => {
     console.log(value);  
 });
 
-const register = (name: string, age: number, callback: (value: string) => void):void => {
+const register = (name: string, age: number,  callback: (value: string) => void):void => {
     callback("Hello my name is Nasir Ali");
 }
 
 register("Nasir Ali", 24, (argument: string) => {
     console.log(argument);
 })
+
+// show details
+const userDetails = (name: string, gender?: string): void => {
+
+}
+userDetails("nasir", "male");
+userDetails("someone");
