@@ -20,7 +20,7 @@ class MetalBottleMaker extends BottleMaker1 {
 }
 let bt1 = new MetalBottleMaker("Milton");
 bt1.getValue();
-// protected means we can change it from the class and its child class but not from outside the class
+// protected means we can change it from the class and extended class can also change it value too 
 class carMaker {
     constructor() {
         this.name = "Toyota";

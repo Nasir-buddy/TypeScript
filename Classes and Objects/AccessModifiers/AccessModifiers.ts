@@ -23,10 +23,10 @@ let bt1 = new MetalBottleMaker("Milton");
 bt1.getValue();
 
 
-// protected means we can change it from the class and its child class but not from outside the class
+// protected means we can change it from the class and extended class can also change it value too 
 
 class carMaker{
-    private name = "Toyota";
+    protected name = "Toyota";
 }
 
 class superCarMaker extends carMaker{
@@ -38,3 +38,16 @@ class superCarMaker extends carMaker{
 
 let car = new superCarMaker();
 car.changename();
+
+class keyboardMaker{
+    private brandName: "CosmicByte";
+}
+
+class keyboard extends keyboardMaker{
+    public brandName = "HP";
+    changeKeyboardName(){
+        this.brandName = "Nothing"
+    }
+}
+
+let keybrd = new keyboardMaker();
