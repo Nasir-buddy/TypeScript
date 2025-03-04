@@ -16,7 +16,7 @@ class MetalBottleMaker extends BottleMaker1{
         super(name);
     }
     getValue(){
-        console.log(this.name, this.halwa);
+        // console.log(this.name, this.halwa);
     }   
 }
 let bt1 = new MetalBottleMaker("Milton");
@@ -56,9 +56,9 @@ let keybrd = new keyboardMaker();
 // readonly property 
 
 class User{
-    constructor(public readonly name: string){}
+    constructor(public readonly _name: string){}
     changeName(){
-        this.name = "Nasir Ali"
+        // this.name = "Nasir Ali"
     }
 }
 
