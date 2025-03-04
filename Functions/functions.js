@@ -16,8 +16,15 @@ var register = function (name, age, callback) {
 register("Nasir Ali", 24, function (argument) {
     console.log(argument);
 });
-// show details
+// show details conditional param
 var userDetails = function (name, gender) {
 };
 userDetails("nasir", "male");
 userDetails("someone");
+// default param
+var userAge = function (name, gender) {
+    if (gender === void 0) { gender = "not to disclosed"; }
+    console.log(name, gender);
+};
+userAge("nasir ali", "male");
+userAge("someone");
