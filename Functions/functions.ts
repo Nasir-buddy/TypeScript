@@ -38,3 +38,8 @@ userAge("someone")
 
 
 // new function
+const machine = (machineName: string, machinePower: number, machineCode: number = 555): void => {
+    console.log(machineName, machinePower, machineCode);
+}
+
+machine("Engine", 150)
