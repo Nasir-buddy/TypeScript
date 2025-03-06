@@ -35,3 +35,6 @@ const userAge = (name: string, gender: string = "not to disclosed"): void => {
 
 userAge("nasir ali", "male");
 userAge("someone")
+
+
+// new function
