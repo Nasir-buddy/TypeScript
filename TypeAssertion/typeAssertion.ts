@@ -15,3 +15,12 @@ let e: any = "nasir";
 let f = Number("12");
 // casting to different data type in number
 console.log(typeof f);
+
+
+// Non-null assertion operator
+
+let g: null | undefined | string;
+
+g = "nasir"
+// by adding ! we are sure that the value of g is not null neither undefined.
+g!.charAt(2);
