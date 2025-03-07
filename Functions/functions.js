@@ -1,3 +1,4 @@
+"use strict";
 // Functions
 // function types
 // optional and default function parameter
@@ -7,24 +8,28 @@ function login(name, cb) {
     // your code here for login
     cb("Nasir");
 }
-login("harsh", function (value) {
+login("harsh", (value) => {
     console.log(value);
 });
-var register = function (name, age, callback) {
+const register = (name, age, callback) => {
     callback("Hello my name is Nasir Ali");
 };
-register("Nasir Ali", 24, function (argument) {
+register("Nasir Ali", 24, (argument) => {
     console.log(argument);
 });
 // show details conditional param
-var userDetails = function (name, gender) {
+const userDetails = (name, gender) => {
 };
 userDetails("nasir", "male");
 userDetails("someone");
 // default param
-var userAge = function (name, gender) {
-    if (gender === void 0) { gender = "not to disclosed"; }
+const userAge = (name, gender = "not to disclosed") => {
     console.log(name, gender);
 };
 userAge("nasir ali", "male");
 userAge("someone");
+// new function
+const machine = (machineName, machinePower, machineCode = 555) => {
+    console.log(machineName, machinePower, machineCode);
+};
+machine("Engine", 150);
