@@ -26,3 +26,32 @@ console.log(something("Nasir Ali"));
 
 something(true);
 
+
+// second type of type gaurd by using instanceof
+class remoteTV{
+    switchoffTV(){
+        console.log("switching off tv");
+    }
+}
+class carRemote{
+    switchoffCar(){
+        console.log("switching off the car");
+    }
+}
+
+const tv = new remoteTV()
+const carremote = new carRemote();
+
+// we can pass instance of calss in function 
+function switchoffkaro(device: remoteTV | carRemote){
+    // if the function arg receiving the tv remote then it will run the switch off tv 
+    if(device instanceof remoteTV){
+        device.switchoffTV();
+    } else if (device instanceof carRemote){
+        // if the function arg receiving the car remote then it will run the switch off car
+        device.switchoffCar();
+    }
+}
+
+switchoffkaro(tv);
+switchoffkaro(carremote);
