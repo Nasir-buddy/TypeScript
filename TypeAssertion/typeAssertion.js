@@ -3,4 +3,13 @@
 // type assertion ka matlab btana ts ko ki particular cheej ka type kya hai , 
 // ye ap tab krte ho jb aap ts se jyada us value aur variable ke bare me jante ho.
 // ex
+// type assertion
 let d = 12;
+d.includes("2");
+// type assertion
+let e = "nasir";
+d.indexOf("a");
+// type conversion
+let f = Number("12");
+// casting to different data type in number
+console.log(typeof f);
