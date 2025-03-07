@@ -9,7 +9,7 @@ d.includes("2");
 // type assertion
 let e = "nasir";
 d.indexOf("a");
-// type conversion
+// type conversion / casting
 let f = Number("12");
 // casting to different data type in number
 console.log(typeof f);

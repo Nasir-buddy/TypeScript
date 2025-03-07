@@ -11,7 +11,7 @@ let d: any = 12;
 let e: any = "nasir";
 (<string> d).indexOf("a");
 
-// type conversion
+// type conversion / casting
 let f = Number("12");
 // casting to different data type in number
 console.log(typeof f);
