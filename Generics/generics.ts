@@ -27,4 +27,12 @@ const checkFn = <G>(name: G, b: string, c: number){
     console.log(name, b, c);
 }
 
-checkFn<string>("Nasir", "Ali", 17)
+checkFn<string>("Nasir", "Ali", 17);
+
+// now some ts advantage
+const autoChecker = <G>(name: G){
+    console.log(name);
+}
+
+autoChecker(12);
+autoChecker("Nasir Ali Haider")

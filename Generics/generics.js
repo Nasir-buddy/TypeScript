@@ -23,3 +23,9 @@ const checkFn = (name, b, c) => {
     console.log(name, b, c);
 };
 checkFn("Nasir", "Ali", 17);
+// now some ts advantage
+const autoChecker = (name) => {
+    console.log(name);
+};
+autoChecker(12);
+autoChecker("Nasir Ali Haider");
