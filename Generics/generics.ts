@@ -23,7 +23,7 @@ logger2<number>(23);
 logger2<boolean>(false);
 
 // third function 
-const checkFn = <G>(name: G, b: string, c: number){
+const checkFn = <G>(name: G, b: string, c: number) => {
     console.log(name, b, c);
 }
 
