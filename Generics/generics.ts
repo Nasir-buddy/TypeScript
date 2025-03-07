@@ -30,7 +30,7 @@ const checkFn = <G>(name: G, b: string, c: number) => {
 checkFn<string>("Nasir", "Ali", 17);
 
 // now some ts advantage
-const autoChecker = <G>(name: G){
+const autoChecker = <G>(name: G) => {
     console.log(name);
 }
 
