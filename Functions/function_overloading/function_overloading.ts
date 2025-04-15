@@ -1,7 +1,7 @@
 // function over loading
 
 // ts function signature
-
+// in function overloading the two function will work same with different arguments.
 function ovrlding(a: string): void;
 function ovrlding(a: string, b: number): number;
 
